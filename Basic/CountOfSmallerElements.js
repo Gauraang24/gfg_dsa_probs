@@ -14,15 +14,28 @@
 // Output:
 // 4
 
-const arr = [1, 2, 4, 5, 8, 10];
-const X = 9;
+const arr = [1, 2, 2, 3];
+const X = 5;
+
+// const smallerElemCount = (arr, X) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > X) {
+//       return i;
+//     }
+//   }
+//   console.log("x", X);
+//   return X;
+// };
 
 const smallerElemCount = (arr, X) => {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > X) {
-      return i;
+      return i - 1;
     }
   }
-  return X;
+  return arr.length;
 };
+
 smallerElemCount(arr, X);
+
+//incomplete

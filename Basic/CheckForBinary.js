@@ -33,3 +33,17 @@
 // isBinary(str);
 
 //INCORRECT
+
+const str = "0111100110101100";
+const isBinary = (str) => {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== "0" && str[i] !== "1") {
+      console.log(0);
+      return 0;
+    }
+  }
+  console.log(1);
+  return 1;
+};
+
+isBinary(str);
